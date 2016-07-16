@@ -22,3 +22,6 @@ build
 *.swp
 *.bak
 *~
+#Ignore logs
+*.log
+
