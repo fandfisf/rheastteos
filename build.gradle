@@ -36,6 +36,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
     compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.8'
 	compile group: 'com.typesafe.scala-logging', name: 'scala-logging_2.11', version: '3.4.0'
+	compile "org.flywaydb:flyway-core:4.0.3"
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
