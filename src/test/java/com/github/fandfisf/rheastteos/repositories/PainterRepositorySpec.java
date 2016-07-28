@@ -32,13 +32,13 @@ public class PainterRepositorySpec {
     }
     @Test
     public void pullByPseudonym(){
-        final Painter sp = target.findByPseudonym("Pre-historic San People").get(0);
+        final Painter sp = target.findAllByPseudonym("Pre-historic San People").get(0);
         assertNotNull(sp);
         assertEquals(sp.getFirstName(),"San");
     }
     @Test
     public void pullByLastName(){
-        final Painter sp = target.findByLastName("van Gogh").get(0);
+        final Painter sp = target.findAllByLastName("van Gogh").get(0);
         assertNotNull(sp);
         assertEquals(sp.getFirstName(),"Vincent");
     }
