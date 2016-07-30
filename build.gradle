@@ -29,26 +29,22 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-data-rest')
-	compile('org.springframework.data:spring-data-rest-hal-browser')
-	compile('org.springframework.boot:spring-boot-starter-hateoas')
-	compile('org.springframework.boot:spring-boot-starter-web')
-    compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.8'
-	compile group: 'com.typesafe.scala-logging', name: 'scala-logging_2.11', version: '3.4.0'
-	compile "org.flywaydb:flyway-core:4.0.3"
-	compile "org.projectlombok:lombok:1.16.10"
+    compile('org.springframework.boot:spring-boot-devtools')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-data-rest')
+    compile('org.springframework.boot:spring-boot-starter-hateoas')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.data:spring-data-rest-hal-browser')
+    compile('org.scala-lang:scala-library:2.11.8')
+    compile('com.typesafe.scala-logging:scala-logging_2.11:3.4.0')
+	compile('org.flywaydb:flyway-core:4.0.3')
+	compile('org.projectlombok:lombok:1.16.10')
+
 	runtime('com.h2database:h2')
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
 }
-
-
-/*
-eclipse {
-	classpath {
-		 containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
-		 containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
-	}
-}
-*/
